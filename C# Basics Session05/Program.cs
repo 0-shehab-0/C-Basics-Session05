@@ -1,4 +1,6 @@
-﻿namespace C__Basics_Session05
+﻿using Microsoft.VisualBasic;
+
+namespace C__Basics_Session05
 {
     internal class Program
     {
@@ -92,28 +94,43 @@
             #region Quistion 7
             //Given Genre genre = Genre.Fiction;, convert it into a string using ToString() and print it.
 
-            Genre genre = Genre.Fiction;
+            //Genre genre = Genre.Fiction;
 
-            string result = genre.ToString();
+            //string result = genre.ToString();
 
-            Console.WriteLine(result);
+            //Console.WriteLine(result);
 
             #endregion
 
             #region Quistion 8
             //Given string genreText = "Science";, convert it into a Genre value using Enum.Parse() and 
-          //print the result.
+            //print the result.
 
-            string genreText = "Science";
+            //string genreText = "Science";
 
-            Genre genre1= (Genre)Enum.Parse(typeof(Genre), genreText);
+            //Genre genre1= (Genre)Enum.Parse(typeof(Genre), genreText);
 
-            Console.WriteLine(genre);
+            //Console.WriteLine(genre);
 
 
             #endregion
 
+            #region Quistion 8
+            //Given string genreText = "Mystery"; (not a valid Genre value), use Enum.TryParse() to 
+          //attempt the conversion.Print "Unknown genre" if it fails.
 
+            string genreText = "Mystery";
+
+            if (Enum.TryParse<Genre>(genreText, out Genre genre))
+            {
+                Console.WriteLine(genre);
+            }
+            else
+            {
+                Console.WriteLine("Unknown genre");
+            }
+
+            #endregion
 
 
         }
