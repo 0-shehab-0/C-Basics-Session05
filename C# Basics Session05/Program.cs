@@ -16,6 +16,19 @@
         {
             public string Title;
         }
+
+        enum Genre
+        {
+            Fiction,
+            NonFiction,
+            Science
+        }
+
+        class Book4
+        {
+            public Genre Genre;
+        }
+
         static void Main(string[] args)
         {
             #region Quistion 1
@@ -35,15 +48,25 @@
 
             #region Quistion 3
             //Add a public string Title; field to Book. Set it and print it from Main.
-            Book3 book = new Book3();
+            //Book3 book = new Book3();
 
-            book.Title = " Code";
+            //book.Title = " Code";
 
-            Console.WriteLine(book.Title);
+            //Console.WriteLine(book.Title);
 
             #endregion
 
+            #region Quistion 4
+            //Declare an enum Genre { Fiction, NonFiction, Science }. Add a Genre property to Book, 
+         //assign it Genre.Science, and print it 
 
+                        Book4 book = new Book4();
+
+            book.Genre = Genre.Science;
+
+            Console.WriteLine(book.Genre);
+
+            #endregion
 
 
 
