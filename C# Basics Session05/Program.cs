@@ -81,15 +81,24 @@
             #region Quistion 6
             //Given int genreNumber = 1;, cast it into a Genre value and print the result.
 
-            int genreNumber =1;
+            //int genreNumber =1;
 
-            Genre genre = (Genre)genreNumber;
+            //Genre genre = (Genre)genreNumber;
 
-            Console.WriteLine(genre);
+            //Console.WriteLine(genre);
 
             #endregion
 
+            #region Quistion 7
+            //Given Genre genre = Genre.Fiction;, convert it into a string using ToString() and print it.
 
+            Genre genre = Genre.Fiction;
+
+            string result = genre.ToString();
+
+            Console.WriteLine(result);
+
+            #endregion
 
         }
     }
